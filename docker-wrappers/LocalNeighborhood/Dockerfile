@@ -1,4 +1,3 @@
-# Create a Docker image for the Local Neighborhood algorithm here
 FROM ubuntu:20.04
 
 # create conda environment in advance and activate on run
