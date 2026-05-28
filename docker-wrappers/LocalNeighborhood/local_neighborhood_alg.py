@@ -36,7 +36,7 @@ def local_neighborhood(network_file: Path, nodes_file: Path, output_file: Path):
 
     # Read the list of nodes
     nodes = set()
-    with nodes_file.open("") as nodes_f:
+    with nodes_file.open("r") as nodes_f:
         for line in nodes_f:
             nodes.add(line.strip())
     print(f"Read {len(nodes)} unique nodes")
@@ -45,7 +45,7 @@ def local_neighborhood(network_file: Path, nodes_file: Path, output_file: Path):
     in_edge_counter = 0
     out_edge_counter = 0
     with output_file.open('w') as output_f:
-        with network_file.open("") as network_f:
+        with network_file.open("r") as network_f:
             for line in network_f:
                 line = line.strip()
                 in_edge_counter += 1
