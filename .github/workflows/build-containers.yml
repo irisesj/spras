@@ -38,6 +38,12 @@ jobs:
     with:
       path: docker-wrappers/AllPairs
       container: reedcompbio/allpairs
+  ## for cont. guide
+  build-and-remove-local-neighborhood: 
+    uses: "./.github/workflows/build-and-remove-template.yml"
+    with:
+      path: docker-wrappers/LocalNeighborhood
+      container: reedcompbio/local-neighborhood
   build-and-remove-domino:
     uses: "./.github/workflows/build-and-remove-template.yml"
     with:

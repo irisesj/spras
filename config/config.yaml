@@ -95,7 +95,7 @@ algorithms:
         g: 3
 
   - name: "meo"
-    include: true
+    include: false
     runs:
       run1:
         max_path_length: 3
@@ -220,11 +220,11 @@ analysis:
     include: true
   # Create Cytoscape session file with all pathway graphs for each dataset
   cytoscape:
-    include: true
+    include: false
   # Machine learning analysis (e.g. clustering) of the pathway output files for each dataset
   ml:
     # ml analysis per dataset
-    include: true
+    include: false
     # adds ml analysis per algorithm output
     # only runs for algorithms with multiple parameter combinations chosen
     aggregate_per_algorithm: true
@@ -247,7 +247,7 @@ analysis:
   evaluation:
     # evaluation per dataset-goldstandard pair
     # evaluation will not run unless ml include is set to true
-    include: true
+    include: false
     # adds evaluation per algorithm per dataset-goldstandard pair
     # evaluation per algorithm will not run unless ml include and ml aggregate_per_algorithm are set to true
     aggregate_per_algorithm: true

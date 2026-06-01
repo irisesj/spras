@@ -63,7 +63,8 @@ class LocalNeighborhood(PRM[Empty]):
         Run Local Neighborhood inside its Docker container.
         """
         if not container_settings:
-            container_settings = ProcessedContainerSettings()
+            from spras.config import config as global_config
+            container_settings = global_config.config.container_settings
         LocalNeighborhood.validate_required_run_args(inputs)
 
         work_dir = '/local_neighborhood'
@@ -102,8 +103,8 @@ class LocalNeighborhood(PRM[Empty]):
     @staticmethod
     def parse_output(raw_pathway_file, standardized_pathway_file, params):
         """
-        Convert Local Neighborhood output (A|B) into the SPRAS universal format
-        (Node1\tNode2\tRank\tDirection).
+        Converts Local Neighborhood output (A|B) into universal format
+        from \t sep format
         """
         df = raw_pathway_df(raw_pathway_file, sep='|', header=None)
         if not df.empty:
