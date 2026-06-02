@@ -112,7 +112,7 @@ algorithms:
   - name: "allpairs"
     include: false
 
-  - name: "localneighborhood" #part of contributing guide
+  - name: "local_neighborhood" #part of contributing guide
     include: true
 
   - name: "domino"

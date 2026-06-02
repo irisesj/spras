@@ -86,4 +86,4 @@
    :maxdepth: 1
    :caption: Local Neighborhood
 
-   localneighborhood
+   local-neighborhood

@@ -2,7 +2,7 @@ from typing import Any, Mapping
 
 # supported algorithm imports
 from spras.allpairs import AllPairs
-from spras.localneighborhood import LocalNeighborhood #cont. guide
+from spras.local_neighborhood import LocalNeighborhood #cont. guide
 from spras.btb import BowTieBuilder
 from spras.dataset import Dataset, DatasetSchema
 from spras.diamond import DIAMOnD
@@ -20,7 +20,7 @@ from spras.util import LoosePathLike
 
 algorithms: dict[str, type[PRM]] = {
     "allpairs": AllPairs,
-    "localneighborhood": LocalNeighborhood, #cont. guide
+    "local_neighborhood": LocalNeighborhood, #cont. guide
     "bowtiebuilder": BowTieBuilder,
     "diamond": DIAMOnD,
     "domino": DOMINO,

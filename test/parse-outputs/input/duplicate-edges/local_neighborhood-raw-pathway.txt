@@ -1,0 +1,4 @@
+test_A|B
+B|C
+test_A|B
+B|C

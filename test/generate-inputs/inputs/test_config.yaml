@@ -49,7 +49,7 @@ algorithms:
   - name: "allpairs"
     include: false
 
-  - name: "localneighborhood"
+  - name: "local_neighborhood"
     include: true
 
   - name: "domino"
