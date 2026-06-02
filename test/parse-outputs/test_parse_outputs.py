@@ -22,6 +22,7 @@ algorithms = {
     'omicsintegrator2': {},
     'pathlinker': {},
     'allpairs': {},
+    'local_neighborhood': {}, #cont. guide
     'domino': {},
     'bowtiebuilder': {},
     'responsenet': {},
